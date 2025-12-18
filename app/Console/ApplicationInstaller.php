@@ -7,7 +7,7 @@ use Atro\Console\AbstractConsole;
 use Atro\Services\Installer;
 use Atro\Core\Exceptions;
 
-class ProcessInstall extends AbstractConsole
+class ApplicationInstaller extends AbstractConsole
 {
     public static function getDescription(): string 
     {

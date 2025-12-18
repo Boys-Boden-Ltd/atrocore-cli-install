@@ -1,5 +1,5 @@
 {
-    "name": "boysandboden/atrocore-cli-install",
+    "name": "atrocore/cli-install",
     "require": {
         "atrocore/core": ">=2.1.25 <2.3.0"
     },
@@ -12,9 +12,9 @@
         }
     },
     "extra": {
-        "atroId": "AtrocoreCliInstall",
+        "atroId": "CliInstall",
         "name": {
-            "default": "AtrocoreCliInstall"
+            "default": "CliInstall"
         },
         "description": {
             "default": "A custom module which provides a CLI tool for installing the application without the web installer."

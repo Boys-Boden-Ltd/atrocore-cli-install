@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace CliInstall;
 
 use Atro\Core\ModuleManager\AbstractModule;
-use Console\ApplicationInstaller;
+use Console\CliInstall as ConsoleCliInstall;
 
 class Module extends AbstractModule
 {
@@ -16,7 +16,7 @@ class Module extends AbstractModule
     public function getConsoleCommands(): array
     {
         return [
-            "install" => ApplicationInstaller::class,
+            "install" => ConsoleCliInstall::class,
         ];
     }
 }

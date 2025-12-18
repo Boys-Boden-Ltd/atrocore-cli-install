@@ -10,13 +10,13 @@ class Module extends AbstractModule
 {
     public static function getLoadOrder(): int
     {
-        return 1000;
+        return 9999;
     }
 
     public function getConsoleCommands(): array
     {
         return [
-            "CLI Install" => ApplicationInstaller::class,
+            "install" => ApplicationInstaller::class,
         ];
     }
 }

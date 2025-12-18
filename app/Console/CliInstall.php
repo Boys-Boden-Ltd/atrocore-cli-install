@@ -16,7 +16,7 @@ class CliInstall extends AbstractConsole
 
     public function run(array $data): void 
     {
-        $installer = $container->get(Installer::class);
+        $installer = $this->getContainer()->get(Installer::class);
 
         if ($installer->isInstalled()) {
             throw new Exceptions\Forbidden();

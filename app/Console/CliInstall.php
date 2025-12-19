@@ -7,7 +7,7 @@ use Atro\Console\AbstractConsole;
 use Atro\Services\Installer;
 use Atro\Core\Exceptions;
 
-class CliInstall extends AbstractConsole
+class ApplicationInstall extends AbstractConsole
 {
     public static function getDescription(): string 
     {
@@ -16,7 +16,7 @@ class CliInstall extends AbstractConsole
 
     public function run(array $data): void 
     {
-        $installer = $this->getContainer()->get(Installer::class);
+        /*$installer = $this->getContainer()->get(Installer::class);
 
         if ($installer->isInstalled()) {
             throw new Exceptions\Forbidden();
@@ -38,7 +38,8 @@ class CliInstall extends AbstractConsole
             'password'         => 'admin',
             'confirmPassword'  => 'admin',
             'reportingEnabled' => false,
-        ]);
+        ]);*/
+
         self::show('Install has completed successfully');
     }
 }

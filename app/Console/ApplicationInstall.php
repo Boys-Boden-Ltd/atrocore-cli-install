@@ -16,7 +16,7 @@ class ApplicationInstall extends AbstractConsole
 
     public function run(array $data): void 
     {
-        /*$installer = $this->getContainer()->get(Installer::class);
+        $installer = $this->getContainer()->get(Installer::class);
 
         if ($installer->isInstalled()) {
             throw new Exceptions\Forbidden();
@@ -38,7 +38,7 @@ class ApplicationInstall extends AbstractConsole
             'password'         => 'admin',
             'confirmPassword'  => 'admin',
             'reportingEnabled' => false,
-        ]);*/
+        ]);
 
         self::show('Install has completed successfully');
     }

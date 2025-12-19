@@ -18,9 +18,9 @@ class ApplicationInstall extends AbstractConsole
     {
         $installer = $this->getContainer()->get(Installer::class);
 
-        if ($installer->isInstalled()) {
+        /*if ($installer->isInstalled()) {
             throw new Exceptions\Forbidden();
-        }
+        }*/
 
         $installer->setLanguage('en_US');
 
